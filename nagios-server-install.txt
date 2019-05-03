@@ -23,7 +23,7 @@ echo vm.swappiness = 0 >> /etc/sysctl.conf && sysctl -p
 htpasswd -c /etc/nagios/passwd nagiosadmin 
 
 # browse server from url:
-http://172.30.3.77/nagios
+http://172.30.3.83/nagios
 
 
 ---------------------------------------------------------------------
@@ -43,7 +43,7 @@ define host {
         use                             linux-server
         host_name                       webapp1
         alias                           My first Apache server
-        address                         172.30.3.103
+        address                         172.30.3.83
         max_check_attempts              5
         check_period                    24x7
         notification_interval           30
